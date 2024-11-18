@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PolicyActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/godriveh" />
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms &amp; Conditions"
+        android:textAlignment="center"
+        android:textColor="@color/blueThemeColor"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/terms_container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@+id/terms"
+        app:layout_constraintBottom_toTopOf="@+id/login_frame"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="-60dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/termtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Last Updated: 11/18/2024\n\nWelcome to GoDrive! These Terms and Conditions govern your use of our services through our mobile application and website. By accessing or using our platform, you agree to comply with and be bound by these Terms. If you disagree with any part of these Terms, please do not use our services\n\nEligibility\n\n1. You must be at least 21 years old to rent a vehicle through GoDrive.\n2. You must possess a valid driving license and provide proof of identity.\n3. Any false information provided may result in cancellation of the booking and further legal action.\n\nPrivacy\n\n1. We value your privacy. Any personal data you provide will be handled in accordance with our [Privacy Policy].\n2. We may collect and use location data for fraud prevention and better service delivery.\n\nContact Us\n\nIf you have any questions or concerns about these Terms, please contact us at:\n\nEmail: support@godrive.com\nPhone: +94711469640"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </ScrollView>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/login_frame"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/rounded_top_corners"
+        android:backgroundTint="@color/blueThemeColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/gray"
+            android:text="Continue"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="@color/blueThemeColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"/>
+
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/agreeTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I accept this Terms &amp; Condithions "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms_container"
+        app:layout_constraintVertical_bias="0.451" />
+</androidx.constraintlayout.widget.ConstraintLayout>

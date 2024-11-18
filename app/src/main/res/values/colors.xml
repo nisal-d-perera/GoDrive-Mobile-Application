@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#696969</color>
     <!-- res/values/colors.xml -->
     <color name="blueThemeColor">#007AFF</color>
     <color name="greenThemeColor">#27cc70</color>
