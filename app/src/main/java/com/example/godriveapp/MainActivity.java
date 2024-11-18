@@ -8,6 +8,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -49,12 +50,20 @@ public class MainActivity extends AppCompatActivity {
         TextView welcomeTextView = findViewById(R.id.welcomeText);
         welcomeTextView.setText(spannableStringOne);
 
+        Button rbtn = findViewById(R.id.startedButton);
+        rbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         // Define the color for "Sign In" link (same as themeColor)
-        int linkColor = getResources().getColor(R.color.greenThemeColor);
+        int linkColor = getResources().getColor(R.color.blueThemeColor);
         int defaultColor = getResources().getColor(R.color.black);
 
-        // Apply the color for the entire TextView (if needed)
         TextView alreadyAccountText = findViewById(R.id.alreadyAccountText);
         alreadyAccountText.setTextColor(defaultColor);  // Ensure default text color is applied
 
