@@ -7,4 +7,7 @@
     <color name="blueThemeColor">#007AFF</color>
     <color name="greenThemeColor">#27cc70</color>
 
+    <color name="active_color">#007AFF</color>
+    <color name="inactive_color">#696969</color>
+
 </resources>
