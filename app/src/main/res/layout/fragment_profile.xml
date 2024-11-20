@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@color/blueThemeColor">
+
+    <!-- FrameLayout wrapped inside a ScrollView -->
+    <ScrollView
+        android:id="@+id/profileview"
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <FrameLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_top_corners"
+            android:backgroundTint="@color/white">
+
+            <!-- Profile Image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/user" />
+
+            <!-- Name Text -->
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:text="Nisal Perera"
+                android:textColor="@color/blueThemeColor"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Email Text -->
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:paddingStart="20dp"
+                android:text="Your Email"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Email EditText -->
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="310dp"
+                android:background="@drawable/rounded_text"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="20dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="nisal.perera@bci.lk"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:enabled="false"/>
+
+            <!-- Phone Number Text -->
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:paddingStart="20dp"
+                android:text="Phone Number"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Phone Number EditText -->
+            <EditText
+                android:id="@+id/userPhone"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="410dp"
+                android:background="@drawable/rounded_text"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="20dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="+94 711469640"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:enabled="false"/>
+
+            <!-- Country Text -->
+            <TextView
+                android:id="@+id/countryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="480dp"
+                android:paddingStart="20dp"
+                android:text="Country"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Country EditText -->
+            <EditText
+                android:id="@+id/userCountry"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="510dp"
+                android:background="@drawable/rounded_text"
+                android:drawableStart="@drawable/ic_country"
+                android:drawablePadding="20dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Sri Lanka"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:enabled="false"/>
+
+            <!-- Password Text -->
+            <TextView
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="580dp"
+                android:paddingStart="20dp"
+                android:text="Password"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Password EditText -->
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="610dp"
+                android:background="@drawable/rounded_text"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="20dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="textPassword"
+                android:text="admin@123"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:enabled="false"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="680dp"
+                android:paddingStart="20dp"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <!-- Profile Title -->
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/profileview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Edit Icon -->
+    <ImageView
+        android:id="@+id/chatus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintBottom_toTopOf="@+id/profileview"
+        app:layout_constraintEnd_toStartOf="@+id/editProfile"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toEndOf="@+id/profileText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <ImageView
+        android:id="@+id/editProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toTopOf="@+id/profileview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toEndOf="@+id/profileText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
