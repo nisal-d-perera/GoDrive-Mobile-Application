@@ -86,7 +86,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_notification_bubble"
                 android:padding="12dp"
-                android:text="Welcome Mr. Nisal Perera!\n\nThank you for installing our mobile app. We think this app helps you to make life easier."
+                android:text="Great News!\n\nThe Toyota Axio 2021 is now available for booking. Hurry, reserve it today and enjoy your ride!"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -95,10 +95,10 @@
                 android:id="@+id/notification4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_notification_bubble"
                 android:padding="12dp"
-                android:layout_marginTop="10dp"
-                android:text="Update your profile\n\nYou can update your profile also you can upload a profile photo also."
+                android:text="Great News!\n\nThe Honda CR-V 2025 is now available for booking. Hurry, reserve it today and enjoy your ride!"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -110,7 +110,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_notification_bubble"
                 android:padding="12dp"
-                android:text="Welcome Mr. Nisal Perera!\n\nThank you for installing our mobile app. We think this app helps you to make life easier."
+                android:text="Great News!\n\nThe Toyota Premio 2021 is now available for booking. Hurry, reserve it today and enjoy your ride!"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -119,10 +119,10 @@
                 android:id="@+id/notification6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_notification_bubble"
                 android:padding="12dp"
-                android:layout_marginTop="10dp"
-                android:text="Update your profile\n\nYou can update your profile also you can upload a profile photo also."
+                android:text="Great News!\n\nThe Honda Grace 2018 is now available for booking. Hurry, reserve it today and enjoy your ride!"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -134,7 +134,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_notification_bubble"
                 android:padding="12dp"
-                android:text="Welcome Mr. Nisal Perera!\n\nThank you for installing our mobile app. We think this app helps you to make life easier."
+                android:text="Great News!\n\nThe Toyota Hilux 2019 is now available for booking. Hurry, reserve it today and enjoy your ride!"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -143,10 +143,34 @@
                 android:id="@+id/notification8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_notification_bubble"
                 android:padding="12dp"
+                android:text="Great News!\n\nThe Nissan Xtrail 2015 is now available for booking. Hurry, reserve it today and enjoy your ride!"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notification9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Update your profile\n\nYou can update your profile also you can upload a profile photo also."
+                android:background="@drawable/rounded_notification_bubble"
+                android:padding="12dp"
+                android:text="Great News!\n\nThe Kia Sorento 2011 is now available for booking. Hurry, reserve it today and enjoy your ride!"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notification10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_notification_bubble"
+                android:padding="12dp"
+                android:text="Great News!\n\nThe Toyota Hiace 2009 is now available for booking. Hurry, reserve it today and enjoy your ride!"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
