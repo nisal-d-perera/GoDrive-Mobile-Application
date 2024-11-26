@@ -70,8 +70,8 @@ public class LoginActivity extends AppCompatActivity {
         EditText passwordInput = findViewById(R.id.password);
         Button loginbtn = findViewById(R.id.button_login);
 
-        final String validEmail = "admin@gmail.com";
-        final String validPassword = "admin@123";
+        final String validEmail = "nisal.perera@bci.lk";
+        final String validPassword = "12345678";
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override

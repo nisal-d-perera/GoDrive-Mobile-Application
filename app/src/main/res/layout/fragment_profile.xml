@@ -26,33 +26,56 @@
             android:background="@drawable/rounded_top_corners"
             android:backgroundTint="@color/white">
 
-            <!-- Profile Image -->
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/user"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:src="@drawable/user" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/greenThemeColor"
+                android:layout_marginTop="40dp">
 
-            <!-- Name Text -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/godriveh"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/userimage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.95" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="320dp"
                 android:text="Nisal Perera"
                 android:textColor="@color/blueThemeColor"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
-            <!-- Email Text -->
             <TextView
                 android:id="@+id/emailText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="280dp"
+                android:layout_marginTop="380dp"
                 android:paddingStart="20dp"
                 android:text="Your Email"
                 android:textColor="@color/gray"
@@ -65,7 +88,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="310dp"
+                android:layout_marginTop="410dp"
                 android:background="@drawable/rounded_text"
                 android:drawableStart="@drawable/ic_email"
                 android:drawablePadding="20dp"
@@ -81,7 +104,7 @@
                 android:id="@+id/phoneText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="380dp"
+                android:layout_marginTop="480dp"
                 android:paddingStart="20dp"
                 android:text="Phone Number"
                 android:textColor="@color/gray"
@@ -94,7 +117,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="410dp"
+                android:layout_marginTop="510dp"
                 android:background="@drawable/rounded_text"
                 android:drawableStart="@drawable/ic_phone"
                 android:drawablePadding="20dp"
@@ -110,7 +133,7 @@
                 android:id="@+id/countryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="480dp"
+                android:layout_marginTop="580dp"
                 android:paddingStart="20dp"
                 android:text="Country"
                 android:textColor="@color/gray"
@@ -123,7 +146,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="510dp"
+                android:layout_marginTop="610dp"
                 android:background="@drawable/rounded_text"
                 android:drawableStart="@drawable/ic_country"
                 android:drawablePadding="20dp"
@@ -139,7 +162,7 @@
                 android:id="@+id/passwordText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="580dp"
+                android:layout_marginTop="680dp"
                 android:paddingStart="20dp"
                 android:text="Password"
                 android:textColor="@color/gray"
@@ -152,7 +175,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="610dp"
+                android:layout_marginTop="710dp"
                 android:background="@drawable/rounded_text"
                 android:drawableStart="@drawable/ic_password"
                 android:drawablePadding="20dp"
@@ -168,7 +191,7 @@
                 android:id="@+id/text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="680dp"
+                android:layout_marginTop="780dp"
                 android:paddingStart="20dp"
                 android:textColor="@color/gray"
                 android:textSize="18sp"
